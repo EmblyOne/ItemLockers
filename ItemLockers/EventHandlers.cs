@@ -31,7 +31,7 @@ namespace ItemLockers
                             pickupdestroy.DestroySelf();
                         }
                     }
-                    else if (spawn)  
+                    if (spawn)  
                     {
                         foreach (LockerSpawn spawner in list)
                         {

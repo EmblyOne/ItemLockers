@@ -19,28 +19,28 @@ namespace ItemLockers
         public bool Enabled { get; set; } = true;
          
         [Description("The List with items that will spawn in locker")]
-        public Dictionary<StructureType, List<LockerSpawn>> lockers = new Dictionary<StructureType, List<LockerSpawn>>
+        public Dictionary<StructureType, List<LockerSpawn>> lockers { get; set; }  = new Dictionary<StructureType, List<LockerSpawn>>
         {
             [StructureType.StandardLocker] = new List<LockerSpawn>
             {
                 new LockerSpawn
                 {
                     amount = 1,
-                    chance = 35, 
-                    item = ItemType.Medkit 
-                    
+                    chance = 35,
+                    item = ItemType.Medkit
+
                 },
                 new LockerSpawn
                 {
-                    amount = 1, 
-                    chance = 10, 
+                    amount = 1,
+                    chance = 10,
                     item = ItemType.Adrenaline
                 }
             }
 
         };
         [Description("The list with lockers which won't spawn base game items")]
-        public Dictionary<StructureType, bool> ItemInLockersDisabler = new Dictionary<StructureType, bool>()
+        public Dictionary<StructureType, bool> ItemInLockersDisabler { get; set; }  = new Dictionary<StructureType, bool>()
         {
             [StructureType.StandardLocker] = true
         };
