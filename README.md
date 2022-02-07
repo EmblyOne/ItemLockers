@@ -1,3 +1,4 @@
 # ItemLockers
 ItemLockers is a plugin which can spawn items in lockers, pedestal and etc.  
-![image](https://user-images.githubusercontent.com/69349110/152857986-543309ef-2362-4f63-a570-15b6efd21a83.png)
+![image](https://user-images.githubusercontent.com/69349110/152858092-039fa41e-d336-4214-ae92-3c38c0820c78.png)
+
